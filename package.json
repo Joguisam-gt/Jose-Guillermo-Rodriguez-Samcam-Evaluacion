@@ -1,0 +1,24 @@
+{
+    "name": "job-applications-api",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "API REST para gestión de postulaciones laborales con Node.js, Express y MongoDB",
+    "main": "src/server.js",
+    "scripts": {
+      "start": "node src/server.js",
+      "dev": "nodemon src/server.js",
+      "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles",
+      "test:endpoints": "node scripts/test-endpoints.js",
+      "seed": "node scripts/seed.js"
+    },
+    "dependencies": {
+      "dotenv": "^16.4.5",
+      "express": "^4.19.2",
+      "jsonwebtoken": "^9.0.2",
+      "mongodb": "^6.8.0"
+    },
+    "devDependencies": {
+      "jest": "^29.7.0",
+      "nodemon": "^3.1.4"
+    }
+  }
